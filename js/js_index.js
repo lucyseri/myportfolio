@@ -41,7 +41,6 @@ const sec1RightArrow = sections[0].querySelector('span.arrow.right-arrow')
 const sec1ConBtnItems = sections[0].querySelector('.items');
 const sec1ConBtnItemsUl = sec1ConBtnItems.querySelector('ul');
 const sec1ConBtnItemsUlLi = sec1ConBtnItemsUl.querySelectorAll('li');
-
 const arrBgSec1=[];
 for (let a = 0; a < sec1ConGalleryUlLi.length; a++) {
   arrBgSec1.push(`url(img/sec1_${a}.png) no-repeat 50%/cover`);
@@ -49,7 +48,6 @@ for (let a = 0; a < sec1ConGalleryUlLi.length; a++) {
 }
 
 let i = 0;
-
 function autoGo1(num){
   const gap = sec1ConGalleryUlLi[1].offsetLeft - sec1ConGalleryUlLi[0].offsetLeft;
   const goto = (-num * gap) + 'px';
@@ -103,7 +101,7 @@ function arrowFn1(e) {
         i=1;
       }
       i++;
-     autoGo1(i);
+      autoGo1(i);
       autoAdd1(i);
     }else if(e.target==sec1RightArrow){
       if (i <= 0) {
@@ -171,7 +169,6 @@ const sec2GalleryUlLi = sec2GalleryUl.querySelectorAll('li');
 const sec2Btn = sections[1].querySelector('.items');
 const sec2BtnUl = sec2Btn.querySelector('ul');
 const sec2BtnUlLi = sec2BtnUl.querySelectorAll('li');
-
 const arrBgSec2 = [];
 for(let b = 0; b < sec2GalleryUlLi.length; b++){
   arrBgSec2.push(`url(img/v${b}.jpg) no-repeat 50%/cover`);
@@ -271,7 +268,6 @@ const mobileGalleryUlLi = mobileGalleryUl.querySelectorAll('li');
 const sec3Btn = sections[2].querySelector('.items');
 const sec3BtnUl = sec3Btn.querySelector('ul');
 const sec3BtnUlLi = sec3BtnUl.querySelectorAll('li');
-
 const arrBgSec3Deskop = [];
 const arrBgSec3Tablet = [];
 const arrBgSec3mobile = [];
@@ -283,7 +279,6 @@ for(let c = 0; c < desktopGalleryUlLi.length; c++){
   arrBgSec3mobile.push(`url(img/jm${c}.jpg) no-repeat 50%/cover`);
   mobileGalleryUlLi[c].style.background = arrBgSec3mobile[c];
 }
-
 function sec3autoFadeFn(num){
   desktopGalleryUlLi.forEach((el, idx)=>{
     if(idx==num){
