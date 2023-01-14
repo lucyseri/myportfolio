@@ -33,6 +33,10 @@ table, th, td {
   border-collapse: collapse;
 }
 
+#wrap {
+  background-color: #ffffff;
+}
+
 /*header*/
 header {
   width: 100%;
@@ -41,7 +45,7 @@ header {
   bottom: 0;
   left: 0;
   z-index: 9;
-  background-color: rgba(180, 180, 180, 0.555);
+  background-color: rgba(192, 192, 192, 0.555);
 }
 header nav {
   width: 100%;
@@ -55,7 +59,7 @@ header nav ul {
 }
 header nav ul li {
   flex: 1;
-  border: 1px solid;
+  border: 1px solid #2d2f31;
   display: flex;
   justify-content: center;
 }
@@ -63,6 +67,7 @@ header nav ul li a {
   line-height: 60px;
   font-size: 1.125rem;
   text-align: center;
+  color: #2d2f31;
 }
 @media only screen and (max-width: 480px) {
   header nav ul li a {
@@ -142,16 +147,13 @@ main section .sec-con {
   }
 }
 main section .sec-con h2 {
-  width: 310px;
-  font-size: 1.75rem;
-  line-height: 30px;
-}
-main section .sec-con h2 span {
-  font-size: 1.125rem;
-  line-height: 20px;
+  width: 100%;
+  font-size: 3.5rem;
+  line-height: 4rem;
 }
 main section .sec-con h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 3.2rem;
 }
 main section .sec-con .inner-container {
   width: 100%;
@@ -161,6 +163,7 @@ main section .sec-con .inner-container {
 @media only screen and (max-width: 768px) {
   main section .sec-con .inner-container {
     flex-wrap: wrap;
+    gap: 60px;
   }
 }
 main section .sec-con .inner-container .bottom-btn {
@@ -178,11 +181,11 @@ main section .sec-con .inner-container .bottom-btn .items ul li {
   flex: 0 1 10px;
   height: 10px;
   border-radius: 50%;
-  border: 1px solid;
+  border: 1px solid #2d2f31;
+  cursor: pointer;
 }
 main section .sec-con .inner-container .bottom-btn .items ul li:hover {
-  background-color: #ccc;
-  cursor: pointer;
+  background-color: #2d2f31;
 }
 main section .sec-con .inner-container .left-con {
   flex: 0 1 440px;
@@ -191,9 +194,6 @@ main section .sec-con .inner-container .left-con {
   main section .sec-con .inner-container .left-con {
     flex: 0 1 100%;
   }
-}
-main section .sec-con .inner-container .left-con .emblem {
-  font-size: 0.875rem;
 }
 main section .sec-con .inner-container .left-con .emblem .emblem-img {
   width: 100%;
@@ -205,21 +205,25 @@ main section .sec-con .inner-container .left-con .emblem .emblem-img img {
   height: auto;
   display: block;
 }
+main section .sec-con .inner-container .left-con .emblem .emblem-txt {
+  font-size: 0.875rem;
+  color: #2d2f31;
+}
 main section .sec-con .inner-container .left-con .info {
   margin: 60px 0;
 }
 main section .sec-con .inner-container .left-con .info table.gnb {
   width: 100%;
-  margin: 20px 0;
 }
 main section .sec-con .inner-container .left-con .info table {
   border: none;
+  color: #2d2f31;
 }
 main section .sec-con .inner-container .left-con .info table * {
   border: none;
 }
 main section .sec-con .inner-container .left-con .info table thead {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #2d2f31;
 }
 main section .sec-con .inner-container .left-con .info table thead tr th {
   text-align: center;
@@ -232,13 +236,9 @@ main section .sec-con .inner-container .left-con .info table tbody tr td {
   text-align: center;
   font-size: 0.875rem;
 }
-main section .sec-con .inner-container .left-con .style-guide {
-  margin: 60px 0;
-}
 main section .sec-con .inner-container .left-con .style-guide .colors {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
 }
 main section .sec-con .inner-container .left-con .style-guide .colors .color span {
   display: block;
@@ -251,6 +251,7 @@ main section .sec-con .inner-container .left-con .style-guide .colors .color spa
 }
 main section .sec-con .inner-container .left-con .style-guide .colors .color span.color-info {
   text-align: center;
+  color: #2d2f31;
 }
 main section .sec-con .inner-container .left-con .style-guide .fonts .font {
   display: flex;
@@ -266,6 +267,7 @@ main section .sec-con .inner-container .left-con .style-guide .fonts .font span.
 }
 main section .sec-con .inner-container .left-con .style-guide .fonts .font span.font-info {
   font-size: 0.875rem;
+  color: #2d2f31;
 }
 main section .sec-con .inner-container .right-con {
   flex: 0 1 920px;
@@ -314,7 +316,12 @@ main section .sec-con .inner-container .right-con .buttons span {
   font-size: 1.125rem;
   font-weight: 700;
   border-radius: 25px;
-  background-color: #ccc;
+  background-color: #f0ede6;
+  cursor: pointer;
+  color: #2d2f31;
+}
+main section .sec-con .inner-container .right-con .buttons span:hover {
+  text-decoration: underline;
 }
 @media only screen and (max-width: 480px) {
   main section .sec-con .inner-container .right-con .buttons span {
@@ -322,23 +329,27 @@ main section .sec-con .inner-container .right-con .buttons span {
     margin-bottom: 20px;
   }
 }
-main section .sec-con .inner-container .right-con .buttons span:hover {
-  cursor: pointer;
+main section .sec-con .inner-container .right-con .buttons span a {
+  background-color: inherit;
+  color: inherit;
+}
+main section .sec-con .inner-container .right-con .buttons span a:hover {
+  text-decoration: underline;
 }
 
 main section.sec1 {
   align-items: center;
 }
 main section.sec1 .sec-con h1 {
+  font-size: 1.125rem;
   -webkit-animation: sec1Ani 0.8s ease-in-out;
           animation: sec1Ani 0.8s ease-in-out;
   text-align: center;
-  font-size: 3rem;
-  line-height: 3rem;
+  color: #2d2f31;
 }
-main section.sec1 .sec-con h1 span {
-  font-size: 0.5em;
-  line-height: 20px;
+main section.sec1 .sec-con h1 strong {
+  font-size: 4rem;
+  line-height: 4.5rem;
 }
 main section.sec1 .sec-con .inner-container {
   justify-content: center;
@@ -365,10 +376,8 @@ main section.sec1 .sec-con .inner-container .gallery-con .gallery-top .arrows sp
   display: block;
   width: 20px;
   height: 20px;
-  border-top: 3px solid;
-  border-right: 3px solid;
-}
-main section.sec1 .sec-con .inner-container .gallery-con .gallery-top .arrows span.arrow:hover {
+  border-top: 3px solid #2d2f31;
+  border-right: 3px solid #2d2f31;
   cursor: pointer;
 }
 main section.sec1 .sec-con .inner-container .gallery-con .gallery-top .arrows span.arrow.left-arrow {
@@ -423,8 +432,11 @@ main section.sec1 .sec-con .inner-container .gallery-con .gallery-bottom .btn .i
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 1px solid;
+  border: 1px solid #2d2f31;
   cursor: pointer;
+}
+main section.sec1 .sec-con .inner-container .gallery-con .gallery-bottom .btn .items ul li:hover {
+  background-color: #2d2f31;
 }
 main section.sec2 .sec-con .inner-container {
   justify-content: space-between;
@@ -502,12 +514,15 @@ main section.sec2 .sec-con .inner-container .right-con .project-info ul li {
 }
 main section.sec2 .sec-con .inner-container .right-con .project-info ul li p {
   text-align: center;
-  font-size: 0.875rem;
 }
 main section.sec2 .sec-con .inner-container .right-con .project-info ul li p.page-name {
   line-height: 40px;
   font-size: 1.125rem;
   font-weight: 700;
+}
+main section.sec2 .sec-con .inner-container .right-con .project-info ul li p.page-info {
+  font-size: 0.875rem;
+  color: #2d2f31;
 }
 main section.sec3 .sec-con .inner-container {
   justify-content: space-between;
@@ -660,17 +675,34 @@ main section.sec3 .sec-con .inner-container .right-con .project-info ul {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 480px) {
+  main section.sec3 .sec-con .inner-container .right-con .project-info ul {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
 main section.sec3 .sec-con .inner-container .right-con .project-info ul li {
   flex: 0 1 230px;
 }
+@media only screen and (max-width: 480px) {
+  main section.sec3 .sec-con .inner-container .right-con .project-info ul li {
+    flex: 0 1 200px;
+  }
+}
 main section.sec3 .sec-con .inner-container .right-con .project-info ul li p {
   text-align: center;
-  font-size: 0.875rem;
 }
 main section.sec3 .sec-con .inner-container .right-con .project-info ul li p.page-name {
   line-height: 40px;
   font-size: 1.125rem;
   font-weight: 700;
+}
+main section.sec3 .sec-con .inner-container .right-con .project-info ul li p.page-info {
+  font-size: 0.875rem;
+  color: #2d2f31;
+}
+main section.sec4 .sec-con .top-con {
+  margin-bottom: 40px;
 }
 main section.sec4 .sec-con .top-con .skills {
   padding: 20px 0;
@@ -692,7 +724,7 @@ main section.sec4 .sec-con .top-con .skills ul li {
 main section.sec4 .sec-con .top-con .skills ul li .skill-icon {
   width: 100%;
   height: 100px;
-  background: url(../img/skill-icon.png) no-repeat;
+  background: url("../img/skill-icon.png") no-repeat;
 }
 main section.sec4 .sec-con .top-con .skills ul li:nth-child(1) .skill-icon {
   background-position: 0 0px;
@@ -727,12 +759,12 @@ main section.sec4 .sec-con .bottom-con {
   width: 100%;
   height: auto;
   display: flex;
-  gap: 40px;
+  gap: 60px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 main section.sec4 .sec-con .bottom-con .certificate-con {
-  flex: 0 1 680px;
+  flex: 0 1 670px;
 }
 main section.sec4 .sec-con .bottom-con .certificate-con ul {
   padding: 20px 0;
@@ -753,7 +785,7 @@ main section.sec4 .sec-con .bottom-con .certificate-con ul li p.level {
   flex: 0 1 100px;
 }
 main section.sec4 .sec-con .bottom-con .contact {
-  flex: 0 1 680px;
+  flex: 0 1 670px;
 }
 main section.sec4 .sec-con .bottom-con .contact form * {
   width: 100%;
@@ -763,40 +795,27 @@ main section.sec4 .sec-con .bottom-con .contact form * {
   border-radius: 25px;
   border: none;
   outline: none;
-  background-color: rgba(204, 204, 204, 0.548);
+  background-color: #f0ede6;
   margin: 20px 0;
 }
-main section.sec4 .sec-con .bottom-con .contact form input::-moz-placeholder {
+main section.sec4 .sec-con .bottom-con .contact form input {
   font-size: 1rem;
-}
-main section.sec4 .sec-con .bottom-con .contact form input:-ms-input-placeholder {
-  font-size: 1rem;
-}
-main section.sec4 .sec-con .bottom-con .contact form input::placeholder {
-  font-size: 1rem;
+  font-family: "IBM Plex Sans KR", sans-serif;
 }
 main section.sec4 .sec-con .bottom-con .contact form textarea {
+  font-size: 1rem;
+  font-family: "IBM Plex Sans KR", sans-serif;
   resize: none;
-}
-main section.sec4 .sec-con .bottom-con .contact form textarea::-moz-placeholder {
-  font-size: 1rem;
-}
-main section.sec4 .sec-con .bottom-con .contact form textarea:-ms-input-placeholder {
-  font-size: 1rem;
-}
-main section.sec4 .sec-con .bottom-con .contact form textarea::placeholder {
-  font-size: 1rem;
 }
 main section.sec4 .sec-con .bottom-con .contact form button {
   font-size: 1.125rem;
+  line-height: 1.5rem;
   font-weight: 700;
-}
-main section.sec4 .sec-con .bottom-con .contact form button:hover {
   cursor: pointer;
 }
 
 .btnOn {
-  background-color: #ccc;
+  background-color: #2d2f31;
 }
 
 .fadeLi {
@@ -831,10 +850,9 @@ main section.sec4 .sec-con .bottom-con .contact form button:hover {
   font-weight: 700;
   text-align: center;
   border-radius: 50%;
-  background-color: #fdab84;
+  background-color: #efcf60;
   margin: 0 auto;
-}
-.popup .popup-con .out-btn span:hover {
+  color: #2d2f31;
   cursor: pointer;
 }
 .popup .popup-con iframe {
@@ -925,7 +943,7 @@ main section.sec4 .sec-con .bottom-con .contact form button:hover {
 footer {
   width: 100%;
   height: 80vh;
-  background-color: #3d3b3b;
+  background-color: #2d2f31;
   overflow-x: hidden;
 }
 footer .inner-footer {
@@ -953,29 +971,29 @@ footer .inner-footer .goto-top a {
   margin: 0 auto;
   text-align: center;
   font-size: 1.125rem;
-  color: #ffffff;
+  color: #f0ede6;
 }
 footer .inner-footer .goto-top a:hover {
-  color: #cdf06d;
+  color: #efcf60;
 }
 footer .inner-footer .seeyou {
   width: 100%;
   height: auto;
 }
 footer .inner-footer .seeyou p {
-  color: #ffffff;
+  color: #f0ede6;
   font-size: 6rem;
   text-align: center;
 }
 footer .inner-footer .seeyou p:not(:nth-child(2)) {
-  color: #cdf06d;
+  color: #efcf60;
   opacity: 0;
 }
 footer .inner-footer .refer {
   font-size: 0.875rem;
   text-align: center;
   line-height: 20px;
-  color: #ffffff;
+  color: #f0ede6;
 }
 footer .inner-footer .refer a {
   display: block;
