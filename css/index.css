@@ -76,29 +76,9 @@ header nav ul li a {
 }
 
 /*container*/
-@-webkit-keyframes sec1Ani {
-  from {
-    transform: translateY(-60px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes sec1Ani {
-  from {
-    transform: translateY(-60px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 @-webkit-keyframes titleAni {
   from {
-    transform: translateX(130px);
+    transform: translateY(-60px);
     opacity: 0;
   }
   to {
@@ -108,7 +88,7 @@ header nav ul li a {
 }
 @keyframes titleAni {
   from {
-    transform: translateX(130px);
+    transform: translateY(-60px);
     opacity: 0;
   }
   to {
@@ -342,8 +322,8 @@ main section.sec1 {
 }
 main section.sec1 .sec-con h1 {
   font-size: 1.125rem;
-  -webkit-animation: sec1Ani 0.8s ease-in-out;
-          animation: sec1Ani 0.8s ease-in-out;
+  -webkit-animation: titleAni 0.8s ease-in-out;
+          animation: titleAni 0.8s ease-in-out;
   text-align: center;
   color: #2d2f31;
 }
@@ -850,10 +830,14 @@ main section.sec4 .sec-con .bottom-con .contact form button {
   font-weight: 700;
   text-align: center;
   border-radius: 50%;
-  background-color: #efcf60;
+  background-color: #f0ede6;
   margin: 0 auto;
   color: #2d2f31;
   cursor: pointer;
+}
+.popup .popup-con .out-btn span:hover {
+  background-color: #2d2f31;
+  color: #f0ede6;
 }
 .popup .popup-con iframe {
   margin: 0 auto;
@@ -974,7 +958,7 @@ footer .inner-footer .goto-top a {
   color: #f0ede6;
 }
 footer .inner-footer .goto-top a:hover {
-  color: #efcf60;
+  color: #ffffff;
 }
 footer .inner-footer .seeyou {
   width: 100%;
@@ -986,7 +970,7 @@ footer .inner-footer .seeyou p {
   text-align: center;
 }
 footer .inner-footer .seeyou p:not(:nth-child(2)) {
-  color: #efcf60;
+  color: #ffffff;
   opacity: 0;
 }
 footer .inner-footer .refer {

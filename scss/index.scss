@@ -101,29 +101,16 @@ header {
 }
 
 /*container*/
-@keyframes sec1Ani {
+@keyframes titleAni {
   from {
     transform: translateY(-60px);
     opacity: 0;
   }
-
   to {
     transform: translateY(0);
     opacity: 1;
   }
 }
-
-@keyframes titleAni {
-  from {
-    transform: translateX(130px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .titleIn {
   animation: titleAni 1s ease-in-out;
 }
@@ -351,7 +338,7 @@ main {
     .sec-con {
       h1 {
         font-size: 1.125rem;
-        animation: sec1Ani 0.8s ease-in-out;
+        animation: titleAni 0.8s ease-in-out;
         text-align: center;
         color: $main-color;
         strong{
@@ -833,10 +820,15 @@ main {
         font-weight: 700;
         text-align: center;
         border-radius: 50%;
-        background-color: $point-color;
+        background-color: $bg-color;
         margin: 0 auto;
         color: $main-color;
         cursor: pointer;
+        &:hover{
+          background-color: $main-color;
+          color: $bg-color;
+
+        }
       }
     }
     iframe {
@@ -918,7 +910,7 @@ footer {
         font-size: 1.125rem;
         color: $bg-color;
         &:hover {
-          color: $point-color;
+          color: #ffffff;
         }
       }
     }
@@ -930,7 +922,7 @@ footer {
         font-size: 6rem;
         text-align: center;
         &:not(:nth-child(2)) {
-          color: $point-color;
+          color: #ffffff;
           opacity: 0;
         }
       }
