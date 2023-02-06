@@ -1,82 +1,106 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>이세리 포트폴리오</title>
-  <script src="js/js_index.js" defer></script>
+  <title>Lees Seri Portfolio</title>
   <link rel="stylesheet" href="css/index.css">
+  <script src="js/js_index.js" defer></script>
 </head>
+
 <body>
   <div id="wrap">
-    <header>
+    <header class="headerOn">
       <nav>
-        <ul class="gnb">
-          <li><a href="#section2">Project_Web Standard</a></li>
-          <li><a href="#section3">Project_Responsive Web</a></li>
-          <li><a href="#section4">Skills & Contact</a></li>
-        </ul>
+        <div class="gnb">
+          <ul>
+            <li><a href="#section2">1. Project_Vixtorm</a></li>
+            <li><a href="#section3">2. Project_Jellycat</a></li>
+            <li><a href="#section4">3. Contact</a></li>
+          </ul>
+        </div>
+        <div class="goto">
+          <a href="#section1">Top</a>
+        </div>
       </nav>
     </header>
     <main>
-      <section class="sec1" id="section1">
-        <div class="sec-con">
-          <h1>
-            <strong>Web Publishing 
-              <br>Portfolio</strong>
-            <br>by Lee Seri
-          </h1>
-          <div class="inner-container">
-            <div class="gallery-con">
-              <div class="gallery-top">
-                <div class="arrows left"><span class="arrow left-arrow"></span></div>
-                <div class="slide-gallery">
-                  <div class="gallery">
-                    <ul>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="arrows right"><span class="arrow right-arrow"></span></div>
-              </div>
-              <div class="gallery-bottom">
-                <div class="btn">
-                  <div class="items">
-                    <ul>
-                      <li class="btnOn"></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+      <div class="inner-container">
+        <section class="sec1" id="section1">
+          <div class="sec-con">
+            <div class="sec1-title">
+              <h1>Web Publishing PortFolio</h1>
+              <span>by Lee Seri</span>
+            </div>
+            <div class="index-con">
+              <ul>
+                <li><a href="#section2">
+                    <p class="num">1</p>
+                    <div class="project-list">
+                      <p class="name">Project_Vixtorm</p>
+                      <p class="summery">Web Standard</p>
+                    </div>
+                  </a></li>
+                <li><a href="#section3">
+                    <p class="num">2</p>
+                    <div class="project-list">
+                      <p class="name">Project_Jellycat</p>
+                      <p class="summery">Responsive Web</p>
+                    </div>
+                  </a></li>
+                <li><a href="#section4">
+                    <p class="num">3</p>
+                    <div class="project-list">
+                      <p class="name">Contact</p>
+                    </div>
+                  </a></li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="sec2" id="section2">
-        <div class="sec-con">
-          <h2 class="ani-h2">
-            Project_Web Standard
-          </h2>
-          <div class="inner-container">
-            <div class="left-con">
-              <div class="emblem">
-                <div class="vixtorm-emblem emblem-img"><img src="img/vixtorm-em.png" alt="vixtorm-emblem"></div>
-                <div class="emblem-txt">
-                  #한국전력배구단 #공기업 #친근한 
-                  <br>#한글 #파이팅X #아자O
-                  <br>#스포츠 #열정적인 #역동적인 #레드
-                  <br>#전류 #번개 #성장하는 #솟구치는 
+        </section>
+        <section class="sec2 project-con" id="section2">
+          <div class="sec-con">
+            <div class="title">
+              <div class="left">
+                <h2>Project_Vixtorm</h2>
+                <p>Web Standard</p>
+              </div>
+              <div class="right">
+                <p class="project-info">
+                  <span>웹 접근성</span>과 <span>웹 표준</span>을 준수하여 제작했습니다.<br>
+                  랜딩 페이지에는 <span>Flex</span>와 <span>Grid</span>를 활용했으며, <span>Transform</span>과 <span>Animation</span> 등
+                  동적인 웹 디자인을 구현하고자 했습니다. <br>
+                  <span>팝업창</span>의 형태로 로그인과 회원가입이 가능하도록 했습니다. <br>
+                  이외에도 서브 페이지의 경우 <span>지도 API</span>와 <span>Table 태그</span> 등을 활용했습니다.
+                </p>
+                <p class="contribute">
+                  기여도: 100% 개인 작업 <br>
+                  작업 기간: 2022.05.04 - 2022.05.27
+                </p>
+              </div>
+            </div>
+            <div class="design-con">
+              <div class="brand-intro smaller">
+                <h3>Brand Intro</h3>
+                <div class="BI-con">
+                  <div class="emblem"><img src="img/vixtorm-em.png" alt="vixtorm-emblem"></div>
+                  <div class="concept">
+                    <p class="concept-txt">
+                      한국적력배구단 빅스톰은 모기업이
+                      공기업이라는 점에서 친근하면서도 신뢰감을 주는 동시에,
+                      로고 디자인 속 위에서 아래로 작렬하는 돌풍과 번개 이미지의 역동적인 느낌을 동시에 가지고 있습니다.
+                    </p>
+                    <p class="keyword">
+                      #공기업 #친근한 #스포츠 #열정적인 #역동적인
+                      #레드#전류 #번개 #성장하는 #솟구치는
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="info">
-                <h3>_Information Architecture</h3>
+              <div class="information-architect">
+                <h3>Information Architect</h3>
                 <table class="gnb">
                   <thead>
                     <tr>
@@ -135,104 +159,93 @@
                   </thead>
                 </table>
               </div>
-              <div class="style-guide">
-                <h3>_Style Guide</h3>
-                <div class="colors">
-                  <div class="color">
-                    <span class="color-thum vc1"></span>
-                    <span class="color-info">#f4f4f4</span>
-                  </div>
-                  <div class="color">
-                    <span class="color-thum vc2"></span>
-                    <span class="color-info">#ff0000</span>
-                  </div>
-                  <div class="color">
-                    <span class="color-thum vc3"></span>
-                    <span class="color-info">#000000</span>
-                  </div>
+              <div class="color-paletter smaller">
+                <h3>Color Palette</h3>
+                <ul>
+                  <li class="vc1">#ff0000</li>
+                  <li class="vc2">#f4f4f4</li>
+                  <li class="vc3">#000000</li>
+                </ul>
+              </div>
+              <div class="typography smaller">
+                <h3>Typography</h3>
+                <div class="typo noto">
+                  <p class="thum">가</p>
+                  <p class="typo-info">
+                    IBM Plex Sans KR | <br>
+                    font-weight: 700, 500, 400 | font-size: 30px, 20px
+                  </p>
                 </div>
-                <div class="fonts">
-                  <div class="font">
-                    <span class="font-thum">가</span>
-                    <span class="font-info">Noto Sans | font-weight: 700, 300 | font-size: 30px, 20px</span>
-                  </div>
+              </div>
+              <div class="icons smaller">
+                <h3>Icons & Buttons</h3>
+                <div class="icons-img">
+                  <img src="img/vixtorm_icons.png" alt="jellycat icons img">
                 </div>
               </div>
             </div>
-            <div class="right-con">
-              <div class="vixtorm-preview">
-                <div class="desktop-preview">
-                  <div class="preview-gallery">
-                    <div class="fade-gallery">
-                      <ul>
-                        <li class="fadeLi"></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="mockup-frame"></div>
-                </div>
-                <div class="bottom-btn">
-                  <div class="items">
-                    <ul>
-                      <li class="btnOn"></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="project-info">
-                <ul>
-                  <li>
-                    <p class="page-name">Landing Page</p>
-                    <p class="page-info">semantic tag, flex & grid
-                      <br>로그인 & 회원가입 팝업, 
-                      <br>fade gallery, 
-                      <br>animation & transform, popup gallery
-                    </p>
-                  </li>
-                  <li>
-                    <p class="page-name">"홈코트" Page</p>
-                    <p class="page-info">지도 API</p>
-                  </li>
-                  <li>
-                    <p class="page-name">"소식" Page</p>
-                    <p class="page-info">table, form</p>
-                  </li>
-                </ul>
+            <div class="preview-con">
+              <div class="draft">
+                <img src="img/vixtorm_draft.png" alt="vixtorm design draft">
               </div>
               <div class="buttons">
-                <span class="figma-button"><a href="https://www.figma.com/file/SWLWebVvRtFL5fQw8jdcpD/vixtorm_wireframe?node-id=0%3A1&t=IxTgVc6DZERS8YFs-1" target="_blank">피그마에서 와이어프레임 보기</a></span>
-                <span class="vixtorm visite-button">"Vixtorm" 페이지 보기</span>
+                <span>
+                  <a href="https://www.figma.com/file/SWLWebVvRtFL5fQw8jdcpD/vixtorm_wireframe?t=4eWkwVtWwYcMQzgG-1" 
+                  target="_blank">피그마에서 와이어프레임 보기 >></a>
+                </span>
+                <span><p>데스크탑 버전 "Vixtorm" 보기 >></p></span>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="sec3" id="section3">
-        <div class="sec-con">
-          <h2 class="ani-h2">
-            Project_Responsive Web
-          </h2>
-          <div class="inner-container">
-            <div class="left-con">
-              <div class="emblem">
-                <div class="jellycat-emblem emblem-img"><img src="img/jellycat-em.png" alt="jellycat-emblem"></div>
-                <div class="emblem-txt">#인형 # 어린이 #재미있는<br>
-                  #영국에서온 #프리미엄 #모던한 #세련된 </div>
+        </section>
+        <section class="sec3 project-con" id="section3">
+          <div class="sec-con">
+            <div class="title">
+              <div class="left">
+                <h2>Project_Jellycat</h2>
+                <p>Responsive Web</p>
               </div>
-              <div class="info">
-                <h3>_Information Architecture</h3>
+              <div class="right">
+                <p class="project-info">
+                  1920px, 768px, 480px 너비의 디스플레이에서 모두 구현되는 <span>반응형 웹</span>입니다. <br>
+                  랜딩 페이지는 <span>슬라이드 갤러리</span>와 썸네일을 클릭하면 콘텐츠를 보여주는 <span>팝업 갤러리</span> 등을 구현했습니다. <br>
+                  form과 input 태그를 활용하여 로그인과 회원가입 페이지를 제작했으며 <br>
+                  자바스크립트를 이용해 <span>유효성 검사 기능</span>을 추가했습니다.<br>
+                  서브 페이지인 Product 페이지에는 <span>자동 카드 갤러리</span>와 <span>탭 메뉴</span>로 구성했습니다.
+                </p>
+                <p class="contribute">
+                  기여도: 100% 개인 작업 <br>
+                  작업 기간: 2022.09.10 - 2022.09.19
+                </p>
+              </div>
+            </div>
+            <div class="design-con">
+              <div class="brand-intro smaller">
+                <h3>Brand Intro</h3>
+                <div class="BI-con">
+                  <div class="emblem"><img src="img/jellycat-em.png" alt="jellycat-emblem"></div>
+                  <div class="concept">
+                    <p class="concept-txt">
+                      젤리캣은 영국에서 온 프리미엄 토이 브랜드이기에 <br>
+                      인형과 어린이가 주는 사랑스러운 무드와 동시에 <br>
+                      모던한 감성을 가지고 있습니다.
+                    </p>
+                    <p class="keyword">
+                      #인형 #사랑스러운 #재미있는 #세련된 #프리미엄 #영국 #모던한
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="information-architect">
+                <h3>Information Architect</h3>
                 <table class="gnb">
                   <thead>
                     <tr>
                       <th>About</th>
                       <th>Store</th>
                       <th>Product</th>
-                      <th>Information</th>
-                      <th>member</th>
+                      <th>Informaion</th>
+                      <th>Member</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -245,7 +258,7 @@
                     </tr>
                     <tr>
                       <td>SNS</td>
-                      <td>Store</td>
+                      <td>Offline Store</td>
                       <td>Animals</td>
                       <td>Event</td>
                       <td>Customer Center</td>
@@ -283,232 +296,148 @@
                   </thead>
                 </table>
               </div>
-              <div class="style-guide">
-                <h3>_Style Guide</h3>
-                <div class="colors">
-                  <div class="color">
-                    <span class="color-thum jc1"></span>
-                    <span class="color-info">#e6a29e</span>
-                  </div>
-                  <div class="color">
-                    <span class="color-thum jc2"></span>
-                    <span class="color-info">#ffffff</span>
-                  </div>
-                  <div class="color">
-                    <span class="color-thum jc3"></span>
-                    <span class="color-info">#3d3b3b</span>
-                  </div>
-                </div>
-                <div class="fonts">
-                  <div class="font">
-                    <span class="font-thum">A</span>
-                    <span class="font-info">Asap Condensed | font-weight: 700, 400 | font-size: 28px, 18px</span>
-                  </div>
-                  <div class="font">
-                    <span class="font-thum">가</span>
-                    <span class="font-info">Noto Sans | font-weight: 300 | font-size: 16px, 14px</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="right-con">
-              <div class="jellycat-preview">
-                <div class="previews">
-                  <div class="responsive-pre">
-                    <div class="desktop">
-                      <div class="desktop-gallery">
-                        <div class="fade-gallery">
-                          <ul>
-                            <li class="fadeLi"></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="mockup-frame"></div>
-                    </div>
-                    <div class="tablet">
-                      <div class="tablet-gallery">
-                        <div class="fade-gallery">
-                          <ul>
-                            <li class="fadeLi"></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="mockup-frame"></div>
-                    </div>
-                    <div class="mobile">
-                      <div class="mobile-gallery">
-                        <div class="fade-gallery">
-                          <ul>
-                            <li class="fadeLi"></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="mockup-frame"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="bottom-btn">
-                  <div class="items">
-                    <ul>
-                      <li class="btnOn"></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="project-info">
+              <div class="color-paletter smaller">
+                <h3>Color Palette</h3>
                 <ul>
-                  <li>
-                    <p class="page-name">Landing Page</p>
-                    <p class="page-info">auto gallery, light box</p>
-                  </li>
-                  <li>
-                    <p class="page-name">Product Page</p>
-                    <p class="page-info">tab menu, card gallery
-                    </p>
-                  </li>
-                  <li>
-                    <p class="page-name">Login Page</p>
-                    <p class="page-info">form</p>
-                  </li>
-                  <li>
-                    <p class="page-name">Join Page</p>
-                    <p class="page-info">유효성검사</p>
-                  </li>
+                  <li class="jc1">#e6a29e</li>
+                  <li class="jc2">#ffffff</li>
+                  <li class="jc3">#3d3b3b</li>
                 </ul>
               </div>
-              <div class="jellycat buttons">
-                <span class="figma-button"><a href="https://www.figma.com/file/cLJZK96kMHH5WeqNzTp76i/jellycat_wireframes?node-id=0%3A1&t=IxTgVc6DZERS8YFs-1" target="_blank">피그마에서 와이어프레임 보기</a></span>
-                <span class="visite-button">데스크탑 버전 "Jellycat" 페이지 보기</span>
-                <span class="visite-button">태블릿 버전 "Jellycat" 페이지 보기</span>
-                <span class="visite-button">모바일 버전 "Jellycat" 페이지 보기</span>
+              <div class="typography smaller">
+                <h3>Typography</h3>
+                <div class="typo asap">
+                  <p class="thum">A</p>
+                  <p class="typo-info">
+                    Asap Condensed | <br>
+                    font-weight: 700, 400 | font-size: 28px, 18px
+                  </p>
+                </div>
+                <div class="typo noto">
+                  <p class="thum">가</p>
+                  <p class="typo-info">
+                    Noto Sans KR | <br>
+                    font-weight: 400 | font-size: 16px, 14px
+                  </p>
+                </div>
+              </div>
+              <div class="icons smaller">
+                <h3>Icons & Buttons</h3>
+                <div class="icons-img">
+                  <img src="img/jellycat_icons.png" alt="jellycat icons img">
+                </div>
+              </div>
+            </div>
+            <div class="preview-con">
+              <div class="draft">
+                <img src="img/vixtorm_draft.png" alt="jellycat design draft">
+              </div>
+              <div class="buttons">
+                <span>
+                  <a href="https://www.figma.com/file/cLJZK96kMHH5WeqNzTp76i/jellycat_wireframes?node-id=0%3A1&t=3xIii1idYnvcSXhC-1"
+                  target="_blank">피그마에서 와이어프레임 보기 >></a>
+                </span>
+                <span>
+                  <p>데스크탑 버전 "Jellycat" 보기 >></p>
+                </span>
+                <span>
+                  <p>테블릿 버전 "Jellycat" 보기 >></p>
+                </span>
+                <span>
+                  <p>모바일 버전 "Jellycat" 보기 >></p>
+                </span>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="sec4" id="section4">
-        <div class="sec-con">
-          <div class="top-con">
-            <h2>Skills</h2>
-            <div class="skills">
-              <ul>
-                <li>
-                  <div class="skill-icon"></div>
-                  <p class="skill-name">HTML</p>
-                </li>
-                <li>
-                  <div class="skill-icon"></div>
-                  <p class="skill-name">CSS</p>
-                </li>
-                <li>
-                  <div class="skill-icon"></div>
-                  <p class="skill-name">SCSS</p>
-                </li>
-                <li>
-                  <div class="skill-icon"></div>
-                  <p class="skill-name">Javascript</p>
-                </li>
-                <li>
-                  <div class="skill-icon"></div>
-                  <p class="skill-name">JQuery</p>
-                </li>
-                <li>
-                  <div class="skill-icon"></div>
-                  <p class="skill-name">Adobe Illustration</p>
-                </li>
-                <li>
-                  <div class="skill-icon"></div>
-                  <p class="skill-name">Adobe Photoshop</p>
-                </li>
-                <li>
-                  <div class="skill-icon"></div>
-                  <p class="skill-name">Figma</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="bottom-con">
-            <div class="certificate-con">
-              <h2>Certificate</h2>
-              <div class="cerificates">
+        </section>
+        <section class="sec4" id="section4">
+          <div class="sec-con">
+            <div class="top-con">
+              <h2>Skills</h2>
+              <div class="skills">
                 <ul>
                   <li>
-                    <p class="date">2021.05</p>
-                    <p class="certificate">TOEIC</p>
-                    <p class="level">880</p>
+                    <div class="skill-icon"></div>
+                    <p class="skill-name">HTML</p>
                   </li>
                   <li>
-                    <p class="date">2021.02</p>
-                    <p class="certificate">컴퓨터활용능력</p>
-                    <p class="level">2급</p>
+                    <div class="skill-icon"></div>
+                    <p class="skill-name">CSS</p>
                   </li>
                   <li>
-                    <p class="date">2020.10</p>
-                    <p class="certificate">GTQ 그래픽 기술 자격</p>
-                    <p class="level">1급</p>
+                    <div class="skill-icon"></div>
+                    <p class="skill-name">SCSS</p>
                   </li>
                   <li>
-                    <p class="date">2020.03</p>
-                    <p class="certificate">GTQi 그래픽 기술 자격 일러스트</p>
-                    <p class="level">1급</p>
+                    <div class="skill-icon"></div>
+                    <p class="skill-name">Javascript</p>
+                  </li>
+                  <li>
+                    <div class="skill-icon"></div>
+                    <p class="skill-name">JQuery</p>
+                  </li>
+                  <li>
+                    <div class="skill-icon"></div>
+                    <p class="skill-name">Adobe Illustration</p>
+                  </li>
+                  <li>
+                    <div class="skill-icon"></div>
+                    <p class="skill-name">Adobe Photoshop</p>
+                  </li>
+                  <li>
+                    <div class="skill-icon"></div>
+                    <p class="skill-name">Figma</p>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="contact">
-              <h2>Contact</h2>
-              <form action="https://getform.io/f/000591e0-8b06-47e4-a366-be7fce5d126a" method="POST">
-                <input type="text" value="serirucy@gmail.com" disabled>
-                <input type="email" name="email" placeholder="Your Email" required autocomplete="off">
-                <textarea name="emailContent" id="emailContent" cols="30" rows="10" placeholder="Message"
-                  required></textarea>
-                <button type="submit">SEND</button>
-              </form>
+            <div class="bottom-con">
+              <div class="certificate-con">
+                <h2>Certificate</h2>
+                <div class="cerificates">
+                  <ul>
+                    <li>
+                      <p class="date">2021.05</p>
+                      <p class="certificate">TOEIC</p>
+                      <p class="level">880</p>
+                    </li>
+                    <li>
+                      <p class="date">2021.02</p>
+                      <p class="certificate">컴퓨터활용능력</p>
+                      <p class="level">2급</p>
+                    </li>
+                    <li>
+                      <p class="date">2020.10</p>
+                      <p class="certificate">GTQ 그래픽 기술 자격</p>
+                      <p class="level">1급</p>
+                    </li>
+                    <li>
+                      <p class="date">2020.03</p>
+                      <p class="certificate">GTQi 그래픽 기술 자격 일러스트</p>
+                      <p class="level">1급</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contact">
+                <h2>Contact</h2>
+                <form action="https://getform.io/f/000591e0-8b06-47e4-a366-be7fce5d126a" method="POST">
+                  <input type="text" value="serirucy@gmail.com" disabled>
+                  <input type="email" name="email" placeholder="Your Email" required autocomplete="off">
+                  <textarea name="emailContent" id="emailContent" cols="30" rows="10" placeholder="Message"
+                    required></textarea>
+                    <span>
+                      <button type="submit">SEND</button>
+                    </span>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <div class="popup">
-        <div class="popup-con">
-          <div class="out-btn">
-            <span class="close">X</span>
-          </div>
-          <iframe src="https://lucyseri.github.io/vixtorm/" 
-          frameborder="0" width="1920px" height="880px"></iframe>
-          <iframe src="https://lucyseri.github.io/jellycat_project/" 
-          frameborder="0" width="1920px" height="880px"></iframe>
-        </div>
+        </section>
       </div>
     </main>
-    <footer>
-      <div class="inner-footer">
-        <div class="goto-top btn">
-          <a href="#section1">
-            Go to Top</a>
-        </div>
-        <div class="seeyou">
-          <p class="thanks">THANKS</p>
-          <p class="for">for</p>
-          <p class="review">REVIEW</p>
-        </div>
-        <div class="refer">
-          img source
-          <a href="https://kr.freepik.com/free-psd/_28427071.htm#query=ipad%20clay&position=2&from_view=search&track=sph" target="_blank">작가 Vectonauta</a>
-        </div>
-      </div>
-    </footer>
+    <footer></footer>
   </div>
 </body>
+
 </html>
