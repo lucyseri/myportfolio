@@ -574,3 +574,39 @@ main .inner-container .sec4 .sec-con .bottom-con .contact form span:hover::after
 main .inner-container .sec4 .sec-con .bottom-con .contact form span:hover button {
   background-color: transparent;
 }
+main .inner-container .popup-con {
+  width: 100vw;
+  height: 0;
+  overflow: scroll;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  visibility: hidden;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.337254902);
+  transition: all 0.3s;
+}
+main .inner-container .popup-con span {
+  width: 50px;
+  height: 50px;
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  margin: 20px auto;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #F6DF66;
+  color: #f9f9f9;
+}
+main .inner-container .popup-con iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+.popupOn {
+  height: 100vh !important;
+  top: 0 !important;
+  visibility: visible !important;
+}
