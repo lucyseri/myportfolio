@@ -77,6 +77,20 @@ header nav a {
 }
 
 /*container*/
+@keyframes titleAni {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.titleIn {
+  animation: titleAni 1s ease-in-out;
+}
+
 main {
   width: 100%;
   height: auto;
@@ -290,9 +304,11 @@ main .inner-container .project-con .sec-con .preview-con {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  gap: 40px;
   justify-content: center;
   align-items: center;
+}
+main .inner-container .project-con .sec-con .preview-con .draft {
+  flex: 0 1 882px;
 }
 main .inner-container .project-con .sec-con .preview-con .draft img {
   width: 100%;
@@ -379,9 +395,6 @@ main .inner-container .sec2 .sec-con .design-con .typography .typo p.thum {
 main .inner-container .sec2 .sec-con .design-con .icons .icons-img {
   max-width: 435px;
 }
-main .inner-container .sec2 .sec-con .preview-con .draft {
-  flex: 0 1 630px;
-}
 main .inner-container .sec3 .sec-con .design-con .brand-intro .BI-con .emblem {
   width: 100%;
   max-width: 160px;
@@ -416,9 +429,6 @@ main .inner-container .sec3 .sec-con .design-con .typography .noto p.thum {
 }
 main .inner-container .sec3 .sec-con .design-con .icons .icons-img {
   max-width: 255px;
-}
-main .inner-container .sec3 .sec-con .preview-con .draft {
-  flex: 0 1 630px;
 }
 main .inner-container .sec4 .sec-con h2 {
   font-size: 40px;

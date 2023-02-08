@@ -86,6 +86,19 @@ header{
   }
 }
 /*container*/
+@keyframes titleAni {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.titleIn {
+  animation: titleAni 1s ease-in-out;
+}
 main{
   width: 100%;
   height: auto;
@@ -321,10 +334,10 @@ main{
           width: 100%;
           min-height: 100vh;
           display: flex;
-          gap: 40px;
           justify-content: center;
           align-items: center;
           .draft{
+            flex: 0 1 882px;
             img{
               @include img-clear();
             }
@@ -424,11 +437,6 @@ main{
             }
           }
         }
-        .preview-con{
-          .draft{
-            flex: 0 1 630px;
-          }
-        }
       }
     }
     .sec3{
@@ -480,11 +488,6 @@ main{
             .icons-img{
               max-width: 255px;
             }
-          }
-        }
-        .preview-con{
-          .draft{
-            flex: 0 1 630px;
           }
         }
       }

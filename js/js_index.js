@@ -1,37 +1,56 @@
 'use strict';
 const header = document.querySelector('header');
 const sections = document.querySelectorAll('section');
+const sec1 = sections[0];
+const sec1Title = sec1.querySelector('.sec1-title');
+const sec2 = sections[1];
+const sec2Title = sec2.querySelector('.title>.left>h2');
+const sec2Previewe = sec2.querySelector('.preview-con');
+const sec3 = sections[2];
+const sec3Title = sec3.querySelector('.title>.left>h2');
 window.addEventListener("scroll", ()=>{
   let value = window.scrollY;
-  if(value >= sections[1].offsetTop){
+  if(value == 0){
+    sec1Title.classList.add('titleIn');
+  }else{
+    sec1Title.classList.remove('titleIn');
+  }
+  if(value >= 100){
+    sec2Title.classList.add('titleIn');
+  }else{
+    sec2Title.classList.remove('titleIn');
+  }
+  if(value >= sec2.offsetTop){
     header.classList.remove('headerOn');
   }else{
     header.classList.add('headerOn');
+  }
+  if(value >= sec2Previewe.offsetTop + 150){
+    sec3Title.classList.add('titleIn');
+  }else{
+    sec3Title.classList.remove('titleIn');
   }
 });
 
 const popup = document.querySelector('.popup-con');
 const popupOut = popup.querySelector('span');
 const popupIframe = popup.querySelector('iframe');
-const sec2 = document.querySelector('section.sec2');
 const sec2buttons = sec2.querySelector('.buttons');
 const sec2buttonsBtn = sec2buttons.querySelector('p');
-const sec3 = document.querySelector('section.sec3');
-const sec3buttons = sec3.querySelector('.buttons');
-const sec3buttonsBtn = sec3buttons.querySelectorAll('p');
-
 sec2buttonsBtn.addEventListener('click', ()=>{
-  popup.classList.add('popupOn');
   popupIframe.setAttribute('src', 'https://lucyseri.github.io/vixtorm/');
+  popup.classList.add('popupOn');
   popupIframe.setAttribute('width', '1920px');
   popupIframe.setAttribute('height', '860px');
   popupIframe.style.borderRadius = "0";
 })
+const sec3buttons = sec3.querySelector('.buttons');
+const sec3buttonsBtn = sec3buttons.querySelectorAll('p');
 sec3buttons.addEventListener('click', (e)=>{
   sec3buttonsBtn.forEach((el, idx)=>{
     if(e.target == el){
-      popup.classList.add('popupOn');
       popupIframe.setAttribute('src', 'https://lucyseri.github.io/jellycat_project/');
+      popup.classList.add('popupOn');
       if(idx == 0){
         popupIframe.setAttribute('width', '1920px');
         popupIframe.setAttribute('height', '860px');
