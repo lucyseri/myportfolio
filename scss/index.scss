@@ -73,10 +73,16 @@ header{
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: 768px) {
+      flex: 0 1 688px;
+    }
     .gnb{
       ul{
         display: flex;
         gap: 40px;
+        @media only screen and (max-width: 768px) {
+          gap: 20px;
+        }
       }
     }
     a{
@@ -106,6 +112,9 @@ main{
   justify-content: center;
   .inner-container{
     flex: 0 1 1512px;
+    @media only screen and (max-width: 768px) {
+      flex: 0 1 648px;
+    }
     .sec1{
       .sec-con{
         min-height: 100vh;
@@ -113,6 +122,9 @@ main{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        @media only screen and (max-width: 768px) {
+          padding: 100px 0;
+        }
         .sec1-title{
           h1{
             font-size: 80px;
@@ -136,34 +148,57 @@ main{
           ul{
             display: flex;
             justify-content: flex-end;
+            @media only screen and (max-width: 768px) {
+              justify-content: flex-start;
+            }
             li{
               flex: 0 1 378px;
               height: 300px;
               position: relative;
+              @media only screen and (max-width: 768px) {
+                flex: 0 1 216px;
+                height: 286px;
+              }
               a{
+                display: block;
+                width: 100%;
                 font-family: $point-font;
                 font-weight: 700;
-                display: block;
                 padding: 40px 30px;
                 position: absolute;
                 top: 0;
                 left: 0;
-                z-index: 999;
+                z-index: 9;
                 p.num{
                   font-size: 80px;
                   line-height: 100px;
+                  @media only screen and (max-width: 768px) {
+                    font-size: 48px;
+                    line-height: 60px;
+                  }
                 }
                 .project-list{
+                  width: 100%;
                   padding: 20px 0;
                   p.name{
+                    width: 100%;
                     font-size: 40px;
                     font-weight: 700;
                     line-height: 50px;
+                    word-break: keep-all;
+                    @media only screen and (max-width: 768px) {
+                      font-size: 30px;
+                      line-height: 38px;
+                    }
                   }
                   p.summery{
                     font-size: 24px;
                     font-weight: 300;
                     line-height: 30px;
+                    @media only screen and (max-width: 768px) {
+                      font-size: 16px;
+                      line-height: 30px;
+                    }
                   }
                 }
               }
@@ -175,7 +210,7 @@ main{
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                z-index: 1;
+                z-index: 8;
                 transition: all 0.3s;
                 background-color: #F6DF66;
               }
@@ -187,7 +222,7 @@ main{
                 position: absolute;
                 bottom: 0;
                 left: 0;
-                z-index: 1;
+                z-index: 8;
                 background-color: #F6DF66;
               }
             }
@@ -197,10 +232,16 @@ main{
     }
     .project-con{
       .sec-con{
-        padding: 100px 0;
+        padding: 100px 0 0 0;
+        @media only screen and (max-width:768px){
+          padding: 60px 0 0 0;
+        }
         .title{
           display: flex;
           border-bottom: 1px solid #ccc;
+          @media only screen and (max-width:768px){
+            display: block;
+          }
           .left{
             flex: 0 1 504px;
             h2{
@@ -218,6 +259,10 @@ main{
           .right{
             padding: 20px 40px;
             border-left: 1px solid #ccc;
+            @media only screen and (max-width:768px){
+              padding: 20px 0;
+              border-left: none;
+            }
             p.project-info{
               span{
                 background-color: #F6DF66;
@@ -225,7 +270,9 @@ main{
             }
             p.contribute{
               padding: 40px 0 20px;
-
+              @media only screen and (max-width:768px){
+                padding: 20px 0;
+              }
             }
           }
         }
@@ -238,9 +285,15 @@ main{
             font-size: 34px;
             font-family: $point-font;
             margin-bottom: 40px;
+            @media only screen and (max-width:768px){
+              margin-bottom: 20px;
+            }
           }
           .smaller{
             flex: 0 1 464px;
+            @media only screen and (max-width:768px){
+              flex: 0 1 648px;
+            }
           }
           .brand-intro{
             .BI-con{
@@ -263,6 +316,52 @@ main{
           }
           .information-architect{
             flex: 0 1 988px;
+            .gnb{
+              &>ul{
+                display: flex;
+                gap: 20px;
+                justify-content: flex-start;
+                text-align: center;
+                &>li{
+                  flex: 0 1 120px;
+                  p{
+                    font-weight: 700;
+                    line-height: 30px;
+                    background-color: #F6DF66;
+                  }
+                  ul.sub{
+                    padding: 0 0 20px;
+                    &::before{
+                      content: '';
+                      display: block;
+                      width: 2px;
+                      height: 15px;
+                      background-color: #F6DF66;
+                      margin: 0 auto;
+                    }
+                    li{
+                      line-height: 30px;
+                      border: 2px solid #F6DF66;
+                      margin: 0 0 10px;
+                    }
+                  }
+                }
+              }
+            }
+            .goto{
+              ul{
+                display: flex;
+                gap: 20px;
+                justify-content: flex-start;
+                li{
+                  flex: 0 1 120px;
+                  font-weight: 700;
+                  line-height: 30px;
+                  text-align: center;
+                  background-color: #F6DF66;
+                }
+              }
+            }
             table.gnb {
               margin-bottom: 20px;
             }
@@ -294,20 +393,16 @@ main{
               }
             }
           }
-          .color-paletter{
-            ul{
-              display: flex;
-              li{
-                flex: 1;
-                line-height: 50px;
-                text-align: center;
-              }
-            }
-          }
           .typography{
+            @media only screen and (max-width:768px){
+              flex: 0 1 294px;
+            }
             .typo{
               display: flex;
               gap: 20px;
+              @media only screen and (max-width:768px){
+                gap: 10px;
+              }
               p.thum{
                 flex: 0 0 50px;
                 text-align: center;
@@ -317,6 +412,19 @@ main{
                 font-size: 16px;
                 line-height: 20px;
 
+              }
+            }
+          }
+          .color-paletter{
+            @media only screen and (max-width:768px){
+              flex: 0 1 294px;
+            }
+            ul{
+              display: flex;
+              li{
+                flex: 1;
+                line-height: 50px;
+                text-align: center;
               }
             }
           }
@@ -336,14 +444,29 @@ main{
           display: flex;
           justify-content: center;
           align-items: center;
+          @media only screen and (max-width:768px){
+            display: block;
+            height: auto;
+            padding: 160px 0;
+          }
           .draft{
             flex: 0 1 882px;
+            @media only screen and (max-width:768px){
+              width: 100%;
+              max-width: 432px;
+              margin: 0 auto;
+            }
             img{
               @include img-clear();
             }
           }
           .buttons{
             flex: 0 1 300px;
+            @media only screen and (max-width:768px){
+              width: 100%;
+              max-width: 300px;
+              margin: 0 auto;
+            }
             span{
               display: block;
               width: 100%;
@@ -352,7 +475,7 @@ main{
               font-size: 18px;
               font-weight: 700;
               line-height: 34px;
-              margin-bottom: 40px;
+              margin-bottom: 20px;
               cursor: pointer;
               &::after{
                 content: '';
@@ -399,13 +522,25 @@ main{
             .BI-con{
               display: flex;
               gap: 40px;
+              @media only screen and (max-width:768px){
+                gap: 20px;
+              }
               .emblem{
                 flex: 0 1 126px;
+                @media only screen and (max-width:768px){
+                  flex: 0 1 108px;
+                }
               }
               .concept{
                 flex: 0 1 298px;
+                @media only screen and (max-width:768px){
+                  flex: 0 1 500px;
+                }
                 p.concept-txt{
                   margin: 0 0 20px 0;
+                  @media only screen and (max-width:768px){
+                    margin: 0 0 10px 0;
+                  }
                 }
               }
             }
@@ -451,6 +586,9 @@ main{
               .concept{
                 p.concept-txt{
                   margin: 20px 0;
+                  @media only screen and (max-width:768px){
+                    margin: 10px 0;
+                  }
                 }
               }
             }
@@ -470,6 +608,9 @@ main{
           .typography{
             .asap{
               margin: 0 0 20px 0;
+              @media only screen and (mx-width: 768px){
+                margin: 0 0 10px 0;
+              }
               p.thum{
                 font-size: 28px;
                 font-weight: 700;
@@ -497,15 +638,23 @@ main{
         h2{
           font-size: 40px;
           font-family: $point-font;
+          @media only screen and (max-width: 768px){
+            font-size: 60px;
+          }
         }
         .top-con {
-          margin-bottom: 40px;
           .skills {
-            padding: 20px 0;
+            padding: 20px 0 60px;
+            @media only screen and (max-width: 768px){
+              padding: 20px 0;
+            }
             ul {
               display: flex;
               gap: 40px;
               flex-wrap: wrap;
+              @media only screen and (max-width: 768px){
+                gap: 20px;
+              }
               li {
                 flex: 0 0 100px;
                 .skill-icon {
@@ -530,27 +679,27 @@ main{
         .bottom-con {
           width: 100%;
           height: auto;
+          padding: 20px 0 60px;
           display: flex;
           gap: 60px;
           justify-content: space-between;
           flex-wrap: wrap;
+          @media only screen and (max-width:768px){
+            gap: 40px;
+          }
           .certificate-con {
             flex: 0 1 726px;
-            ul {
+            *{
+              border: none;
+            }
+            table{
+              width: 100%;
               padding: 20px 0;
-              li {
-                display: flex;
-                justify-content: space-between;
-                line-height: 40px;
-                p.date {
-                  flex: 0 1 150px;
-                }
-                p.certificate {
-                  flex: 0 1 400px;
-                }
-                p.level {
-                  text-align: center;
-                  flex: 0 1 100px;
+              tr{
+                td{
+                  font-family: 'Noto Sans KR', sans-serif;
+                  vertical-align: top;
+                  padding: 10px;
                 }
               }
             }
@@ -667,5 +816,4 @@ main{
   height: 100vh !important;
   top: 0 !important;
   visibility: visible !important;
-
 }
