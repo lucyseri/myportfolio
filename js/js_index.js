@@ -2,19 +2,13 @@
 const header = document.querySelector('header');
 const sections = document.querySelectorAll('section');
 const sec1 = sections[0];
-const sec1Title = sec1.querySelector('.sec1-title');
 const sec2 = sections[1];
 const sec2Title = sec2.querySelector('.title>.left>h2');
-const sec2Previewe = sec2.querySelector('.preview-con');
+const sec2Preview = sec2.querySelector('.preview-con');
 const sec3 = sections[2];
 const sec3Title = sec3.querySelector('.title>.left>h2');
 window.addEventListener("scroll", ()=>{
   let value = window.scrollY;
-  if(value == 0){
-    sec1Title.classList.add('titleIn');
-  }else{
-    sec1Title.classList.remove('titleIn');
-  }
   if(value >= 100){
     sec2Title.classList.add('titleIn');
   }else{
@@ -25,7 +19,7 @@ window.addEventListener("scroll", ()=>{
   }else{
     header.classList.add('headerOn');
   }
-  if(value >= sec2Previewe.offsetTop + 150){
+  if(value >= sec2Preview.offsetTop + 150){
     sec3Title.classList.add('titleIn');
   }else{
     sec3Title.classList.remove('titleIn');

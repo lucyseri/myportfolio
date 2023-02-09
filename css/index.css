@@ -127,6 +127,9 @@ main .inner-container .sec1 .sec-con {
     padding: 100px 0;
   }
 }
+main .inner-container .sec1 .sec-con .sec1-title {
+  animation: titleAni 1s ease-in-out;
+}
 main .inner-container .sec1 .sec-con .sec1-title h1 {
   font-size: 80px;
   font-family: "Roboto Condensed", sans-serif;
