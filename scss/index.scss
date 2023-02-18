@@ -32,6 +32,8 @@ table, th, td {
   border-collapse: collapse;
 }
 $point-font: 'Roboto Condensed', sans-serif;
+$point-color: #F6DF66;
+$dash-color: #ccc;
 @mixin img-clear {
   width: 100%;
   height: auto;
@@ -227,6 +229,150 @@ main{
                 background-color: #F6DF66;
               }
             }
+          }
+        }
+      }
+    }
+    .sec2{
+      padding: 130px 0;
+      .sec-con{
+        h2{
+          font-size: 60px;
+          font-weight: 700;
+          font-family: $point-font;
+          padding: 40px 0;
+          border-bottom: 1px solid $dash-color;
+        }
+        .profile-con{
+          display: flex;
+          @media only screen and (max-width: 768px) {
+            flex-wrap: wrap;
+          }
+          .left{
+            flex: 0 1 378px;
+            padding: 20px 0;
+            border-right: 1px solid $dash-color;
+            @media only screen and (max-width: 768px) {
+              border-right: none;
+            }
+            p.name{
+              font-size: 16px;
+              font-family: $point-font;
+              font-style: italic;
+              color: #313131;
+              strong{
+                font-size: 32px;
+                font-weight: 700;
+                font-style: normal;
+                color: #000000;
+              }
+            }
+            .information{
+              padding: 20px 0;
+              ul{
+                @media only screen and (max-width:768px) {
+                  display: flex;
+                  gap: 60px;
+                }
+                li{
+                  margin: 0 0 10px 0;
+                  font-family: $point-font;
+                  *{
+                    border: none;
+                  }
+                  label{
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 700;
+                    font-family: inherit;
+                  }
+                  .input-con{
+                    display: flex;
+                    input{
+                      flex: 0 1 252px;
+                      display: block;
+                      font-size: 18px;
+                      font-family: inherit;
+                      background-color: transparent;
+                    }
+                    button{
+                      font-size: 16px;
+                      padding: 5px 10px;
+                      border-radius: 15px;
+                      background-color: $point-color;
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .right{
+            flex: 0 1 1134px;
+            padding: 20px 60px;
+            @media only screen and (max-width: 768px) {
+              padding: 20px 0;
+            }
+            h3{
+              font-size: 38px;
+              font-weight: 700;
+              font-family: $point-font;
+            }
+            .skills-con{
+              .skills {
+                padding: 40px 0 60px;
+                @media only screen and (max-width: 768px){
+                  padding: 20px 0 40px;
+                }
+                ul {
+                  display: flex;
+                  gap: 30px;
+                  flex-wrap: wrap;
+                  li {
+                    flex: 0 0 100px;
+                    .skill-icon {
+                      width: 100%;
+                      height: 100px;
+                      background: url("../img/skill-icon.png") no-repeat;
+                    }
+                    @for $bgp from 1 to 9 {
+                      &:nth-child(#{$bgp}) .skill-icon {
+                        background-position: 0 ($bgp - 1) * -100px;
+                      }
+                    }
+                    p {
+                      font-family: $point-font;
+                      line-height: 16px;
+                      text-align: center;
+                      padding: 10px;
+                    }
+                  }
+                }
+              }
+            }
+            .certificate-con{
+              .cerificates{
+                padding: 40px 0;
+                *{
+                  border: none;
+                }
+                table{
+                  width: 80%;
+                  padding: 20px 0;
+                  @media only screen and (max-width: 768px) {
+                    width: 100%;
+                  }
+                  tr{
+                    td{
+                      font-family: 'Noto Sans KR', sans-serif;
+                      vertical-align: top;
+                      padding: 10px;
+                    }
+                  }
+                }
+              }
+            }
+            
           }
         }
       }
@@ -516,7 +662,7 @@ main{
         }
       }
     }
-    .sec2{
+    .sec3{
       .sec-con{
         .design-con{
           .brand-intro{
@@ -575,7 +721,7 @@ main{
         }
       }
     }
-    .sec3{
+    .sec4{
       .sec-con{
         .design-con{
           .brand-intro{
@@ -634,153 +780,6 @@ main{
         }
       }
     }
-    .sec4{
-      .sec-con {
-        h2{
-          font-size: 40px;
-          font-family: $point-font;
-          @media only screen and (max-width: 768px){
-            font-size: 60px;
-          }
-        }
-        .top-con {
-          .skills {
-            padding: 20px 0 60px;
-            @media only screen and (max-width: 768px){
-              padding: 20px 0;
-            }
-            ul {
-              display: flex;
-              gap: 40px;
-              flex-wrap: wrap;
-              @media only screen and (max-width: 768px){
-                gap: 20px;
-              }
-              li {
-                flex: 0 0 100px;
-                .skill-icon {
-                  width: 100%;
-                  height: 100px;
-                  background: url("../img/skill-icon.png") no-repeat;
-                }
-                @for $bgp from 1 to 9 {
-                  &:nth-child(#{$bgp}) .skill-icon {
-                    background-position: 0 ($bgp - 1) * -100px;
-                  }
-                }
-                p {
-                  font-family: $point-font;
-                  line-height: 16px;
-                  padding: 10px;
-                }
-              }
-            }
-          }
-        }
-        .bottom-con {
-          width: 100%;
-          height: auto;
-          padding: 20px 0 60px;
-          display: flex;
-          gap: 60px;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          @media only screen and (max-width:768px){
-            gap: 40px;
-          }
-          .certificate-con {
-            flex: 0 1 726px;
-            *{
-              border: none;
-            }
-            table{
-              width: 100%;
-              padding: 20px 0;
-              tr{
-                td{
-                  font-family: 'Noto Sans KR', sans-serif;
-                  vertical-align: top;
-                  padding: 10px;
-                }
-              }
-            }
-          }
-          .contact {
-            flex: 0 1 726px;
-            form {
-              padding: 20px 0;
-              * {
-                width: 100%;
-                display: block;
-                border-radius: 25px;
-                border: none;
-                outline: none;
-                margin-bottom: 20px;
-              }
-              input {
-                font-size: 1rem;
-                font-weight: 700;
-                font-family: $point-font;
-                background-color: #ffffff;
-                padding: 10px 20px;
-                line-height: 30px;
-                color: #000;
-              }
-              textarea {
-                font-size: 1rem;
-                font-family: $point-font;
-                padding: 10px 20px;
-                resize: none;
-              }
-              span{
-                height: 44px;
-                line-height: 44px;
-                position: relative;
-                button {
-                  width: 100%;
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  z-index: 99;
-                  font-size: 20px;
-                  font-weight: 700;
-                  font-family: $point-font;
-                  letter-spacing: 5px;
-                  line-height: 24px;
-                  padding: 10px 0;
-                  cursor: pointer;
-                }
-                &::after{
-                  content: '';
-                  display: block;
-                  width: 100%;
-                  height: 0;
-                  position: absolute;
-                  bottom:0;
-                  left: 0;
-                  z-index: 1;
-                  border-radius: 25px;
-                  background-color: #F6DF66;
-                  transition: all 0.3s;
-                }
-                &:hover::after{
-                  content: '';
-                  display: block;
-                  width: 100%;
-                  height: 100%;
-                  position: absolute;
-                  bottom:0;
-                  left: 0;
-                }
-                &:hover button{
-                  background-color: transparent;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
     .popup-con{
       width: 100vw;
       height: 0;
@@ -817,4 +816,75 @@ main{
   height: 100vh !important;
   top: 0 !important;
   visibility: visible !important;
+}
+@keyframes clickAni{
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+footer{
+  width: 100%;
+  height: auto;
+  background-color: #252525;
+  padding: 100px 0;
+  .fcon{
+    font-family: $point-font;
+    text-align: center;
+    color: #f9f9f9;
+    p.thanks{
+      font-size: 68px;
+      font-weight: 700;
+      margin: 0 0 60px 0;
+    }
+    address{
+      text-decoration: none;
+      input{
+        font-size: 20px;
+        text-decoration: underline;
+        text-align: center;
+        border: transparent;
+        margin: 0 0 20px 0;
+        background-color: transparent;
+        cursor: pointer;
+        color: #F6DF66;
+        &:hover{
+          font-weight: 700;
+          letter-spacing: 3px;
+          color: #f9f9f9;
+        }
+        &:focus{
+          outline: transparent;
+        }
+      }
+      button{
+        display: block;
+        width: 80px;
+        height: 40px;
+        position: relative;
+        line-height: 40px;
+        font-size: 14px;
+        text-align: center;
+        margin: 0 auto;
+        border: none;
+        background-color: #F6DF66;
+        border-radius: 10px;
+        color: black;
+        animation: clickAni 0.8s ease-in-out infinite;
+        &::before{
+          content: '';
+          display: block;
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: -5px;
+          left: calc(50% - 5px);
+          transform: rotate(45deg);
+          background-color: #F6DF66;
+        }
+      }
+    }
+  }
 }

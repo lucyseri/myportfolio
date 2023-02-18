@@ -241,6 +241,170 @@ main .inner-container .sec1 .sec-con .index-con ul li:hover::after {
   z-index: 8;
   background-color: #F6DF66;
 }
+main .inner-container .sec2 {
+  padding: 130px 0;
+}
+main .inner-container .sec2 .sec-con h2 {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 40px 0;
+  border-bottom: 1px solid #ccc;
+}
+main .inner-container .sec2 .sec-con .profile-con {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  main .inner-container .sec2 .sec-con .profile-con {
+    flex-wrap: wrap;
+  }
+}
+main .inner-container .sec2 .sec-con .profile-con .left {
+  flex: 0 1 378px;
+  padding: 20px 0;
+  border-right: 1px solid #ccc;
+}
+@media only screen and (max-width: 768px) {
+  main .inner-container .sec2 .sec-con .profile-con .left {
+    border-right: none;
+  }
+}
+main .inner-container .sec2 .sec-con .profile-con .left p.name {
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: italic;
+  color: #313131;
+}
+main .inner-container .sec2 .sec-con .profile-con .left p.name strong {
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
+}
+main .inner-container .sec2 .sec-con .profile-con .left .information {
+  padding: 20px 0;
+}
+@media only screen and (max-width: 768px) {
+  main .inner-container .sec2 .sec-con .profile-con .left .information ul {
+    display: flex;
+    gap: 60px;
+  }
+}
+main .inner-container .sec2 .sec-con .profile-con .left .information ul li {
+  margin: 0 0 10px 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+main .inner-container .sec2 .sec-con .profile-con .left .information ul li * {
+  border: none;
+}
+main .inner-container .sec2 .sec-con .profile-con .left .information ul li label {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+}
+main .inner-container .sec2 .sec-con .profile-con .left .information ul li .input-con {
+  display: flex;
+}
+main .inner-container .sec2 .sec-con .profile-con .left .information ul li .input-con input {
+  flex: 0 1 252px;
+  display: block;
+  font-size: 18px;
+  font-family: inherit;
+  background-color: transparent;
+}
+main .inner-container .sec2 .sec-con .profile-con .left .information ul li .input-con button {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #F6DF66;
+  cursor: pointer;
+}
+main .inner-container .sec2 .sec-con .profile-con .right {
+  flex: 0 1 1134px;
+  padding: 20px 60px;
+}
+@media only screen and (max-width: 768px) {
+  main .inner-container .sec2 .sec-con .profile-con .right {
+    padding: 20px 0;
+  }
+}
+main .inner-container .sec2 .sec-con .profile-con .right h3 {
+  font-size: 38px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills {
+  padding: 40px 0 60px;
+}
+@media only screen and (max-width: 768px) {
+  main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills {
+    padding: 20px 0 40px;
+  }
+}
+main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills ul {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills ul li {
+  flex: 0 0 100px;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills ul li .skill-icon {
+  width: 100%;
+  height: 100px;
+  background: url("../img/skill-icon.png") no-repeat;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills ul li:nth-child(1) .skill-icon {
+  background-position: 0 0px;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills ul li:nth-child(2) .skill-icon {
+  background-position: 0 -100px;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills ul li:nth-child(3) .skill-icon {
+  background-position: 0 -200px;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills ul li:nth-child(4) .skill-icon {
+  background-position: 0 -300px;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills ul li:nth-child(5) .skill-icon {
+  background-position: 0 -400px;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills ul li:nth-child(6) .skill-icon {
+  background-position: 0 -500px;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills ul li:nth-child(7) .skill-icon {
+  background-position: 0 -600px;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills ul li:nth-child(8) .skill-icon {
+  background-position: 0 -700px;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .skills-con .skills ul li p {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 16px;
+  text-align: center;
+  padding: 10px;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .certificate-con .cerificates {
+  padding: 40px 0;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .certificate-con .cerificates * {
+  border: none;
+}
+main .inner-container .sec2 .sec-con .profile-con .right .certificate-con .cerificates table {
+  width: 80%;
+  padding: 20px 0;
+}
+@media only screen and (max-width: 768px) {
+  main .inner-container .sec2 .sec-con .profile-con .right .certificate-con .cerificates table {
+    width: 100%;
+  }
+}
+main .inner-container .sec2 .sec-con .profile-con .right .certificate-con .cerificates table tr td {
+  font-family: "Noto Sans KR", sans-serif;
+  vertical-align: top;
+  padding: 10px;
+}
 main .inner-container .project-con .sec-con {
   padding: 100px 0 0 0;
 }
@@ -527,269 +691,103 @@ main .inner-container .project-con .sec-con .preview-con .buttons span * {
   z-index: 99;
   padding: 0 5px;
 }
-main .inner-container .sec2 .sec-con .design-con .brand-intro .BI-con {
+main .inner-container .sec3 .sec-con .design-con .brand-intro .BI-con {
   display: flex;
   gap: 40px;
 }
 @media only screen and (max-width: 768px) {
-  main .inner-container .sec2 .sec-con .design-con .brand-intro .BI-con {
+  main .inner-container .sec3 .sec-con .design-con .brand-intro .BI-con {
     gap: 20px;
   }
 }
-main .inner-container .sec2 .sec-con .design-con .brand-intro .BI-con .emblem {
+main .inner-container .sec3 .sec-con .design-con .brand-intro .BI-con .emblem {
   flex: 0 1 126px;
 }
 @media only screen and (max-width: 768px) {
-  main .inner-container .sec2 .sec-con .design-con .brand-intro .BI-con .emblem {
+  main .inner-container .sec3 .sec-con .design-con .brand-intro .BI-con .emblem {
     flex: 0 1 108px;
   }
 }
-main .inner-container .sec2 .sec-con .design-con .brand-intro .BI-con .concept {
+main .inner-container .sec3 .sec-con .design-con .brand-intro .BI-con .concept {
   flex: 0 1 298px;
 }
 @media only screen and (max-width: 768px) {
-  main .inner-container .sec2 .sec-con .design-con .brand-intro .BI-con .concept {
+  main .inner-container .sec3 .sec-con .design-con .brand-intro .BI-con .concept {
     flex: 0 1 500px;
   }
 }
-main .inner-container .sec2 .sec-con .design-con .brand-intro .BI-con .concept p.concept-txt {
+main .inner-container .sec3 .sec-con .design-con .brand-intro .BI-con .concept p.concept-txt {
   margin: 0 0 20px 0;
 }
 @media only screen and (max-width: 768px) {
-  main .inner-container .sec2 .sec-con .design-con .brand-intro .BI-con .concept p.concept-txt {
+  main .inner-container .sec3 .sec-con .design-con .brand-intro .BI-con .concept p.concept-txt {
     margin: 0 0 10px 0;
   }
 }
-main .inner-container .sec2 .sec-con .design-con .color-paletter ul li.vc1 {
+main .inner-container .sec3 .sec-con .design-con .color-paletter ul li.vc1 {
   background-color: #ff0000;
 }
-main .inner-container .sec2 .sec-con .design-con .color-paletter ul li.vc2 {
+main .inner-container .sec3 .sec-con .design-con .color-paletter ul li.vc2 {
   background-color: #f4f4f4;
 }
-main .inner-container .sec2 .sec-con .design-con .color-paletter ul li.vc3 {
+main .inner-container .sec3 .sec-con .design-con .color-paletter ul li.vc3 {
   background-color: #000000;
 }
-main .inner-container .sec2 .sec-con .design-con .color-paletter ul li:not(:nth-child(2)) {
+main .inner-container .sec3 .sec-con .design-con .color-paletter ul li:not(:nth-child(2)) {
   color: #ffffff;
 }
-main .inner-container .sec2 .sec-con .design-con .typography .typo p.thum {
+main .inner-container .sec3 .sec-con .design-con .typography .typo p.thum {
   font-size: 30px;
   font-weight: 700;
   font-family: "IBM Plex Sans KR", sans-serif;
 }
-main .inner-container .sec2 .sec-con .design-con .icons .icons-img {
+main .inner-container .sec3 .sec-con .design-con .icons .icons-img {
   max-width: 435px;
 }
-main .inner-container .sec3 .sec-con .design-con .brand-intro .BI-con .emblem {
+main .inner-container .sec4 .sec-con .design-con .brand-intro .BI-con .emblem {
   width: 100%;
   max-width: 160px;
 }
-main .inner-container .sec3 .sec-con .design-con .brand-intro .BI-con .concept p.concept-txt {
+main .inner-container .sec4 .sec-con .design-con .brand-intro .BI-con .concept p.concept-txt {
   margin: 20px 0;
 }
 @media only screen and (max-width: 768px) {
-  main .inner-container .sec3 .sec-con .design-con .brand-intro .BI-con .concept p.concept-txt {
+  main .inner-container .sec4 .sec-con .design-con .brand-intro .BI-con .concept p.concept-txt {
     margin: 10px 0;
   }
 }
-main .inner-container .sec3 .sec-con .design-con .color-paletter ul li.jc1 {
+main .inner-container .sec4 .sec-con .design-con .color-paletter ul li.jc1 {
   background-color: #e6a29e;
 }
-main .inner-container .sec3 .sec-con .design-con .color-paletter ul li.jc2 {
+main .inner-container .sec4 .sec-con .design-con .color-paletter ul li.jc2 {
   background-color: #ffffff;
 }
-main .inner-container .sec3 .sec-con .design-con .color-paletter ul li.jc3 {
+main .inner-container .sec4 .sec-con .design-con .color-paletter ul li.jc3 {
   background-color: #3d3b3b;
 }
-main .inner-container .sec3 .sec-con .design-con .color-paletter ul li:nth-child(3) {
+main .inner-container .sec4 .sec-con .design-con .color-paletter ul li:nth-child(3) {
   color: #ffffff;
 }
-main .inner-container .sec3 .sec-con .design-con .typography .asap {
+main .inner-container .sec4 .sec-con .design-con .typography .asap {
   margin: 0 0 20px 0;
 }
 @media only screen and (mx-width: 768px) {
-  main .inner-container .sec3 .sec-con .design-con .typography .asap {
+  main .inner-container .sec4 .sec-con .design-con .typography .asap {
     margin: 0 0 10px 0;
   }
 }
-main .inner-container .sec3 .sec-con .design-con .typography .asap p.thum {
+main .inner-container .sec4 .sec-con .design-con .typography .asap p.thum {
   font-size: 28px;
   font-weight: 700;
   font-family: "Asap Condensed", sans-serif;
 }
-main .inner-container .sec3 .sec-con .design-con .typography .noto p.thum {
+main .inner-container .sec4 .sec-con .design-con .typography .noto p.thum {
   font-size: 16px;
   font-weight: 300;
   font-family: "Noto Sans KR", sans-serif;
 }
-main .inner-container .sec3 .sec-con .design-con .icons .icons-img {
+main .inner-container .sec4 .sec-con .design-con .icons .icons-img {
   max-width: 474px;
-}
-main .inner-container .sec4 .sec-con h2 {
-  font-size: 40px;
-  font-family: "Roboto Condensed", sans-serif;
-}
-@media only screen and (max-width: 768px) {
-  main .inner-container .sec4 .sec-con h2 {
-    font-size: 60px;
-  }
-}
-main .inner-container .sec4 .sec-con .top-con .skills {
-  padding: 20px 0 60px;
-}
-@media only screen and (max-width: 768px) {
-  main .inner-container .sec4 .sec-con .top-con .skills {
-    padding: 20px 0;
-  }
-}
-main .inner-container .sec4 .sec-con .top-con .skills ul {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-@media only screen and (max-width: 768px) {
-  main .inner-container .sec4 .sec-con .top-con .skills ul {
-    gap: 20px;
-  }
-}
-main .inner-container .sec4 .sec-con .top-con .skills ul li {
-  flex: 0 0 100px;
-}
-main .inner-container .sec4 .sec-con .top-con .skills ul li .skill-icon {
-  width: 100%;
-  height: 100px;
-  background: url("../img/skill-icon.png") no-repeat;
-}
-main .inner-container .sec4 .sec-con .top-con .skills ul li:nth-child(1) .skill-icon {
-  background-position: 0 0px;
-}
-main .inner-container .sec4 .sec-con .top-con .skills ul li:nth-child(2) .skill-icon {
-  background-position: 0 -100px;
-}
-main .inner-container .sec4 .sec-con .top-con .skills ul li:nth-child(3) .skill-icon {
-  background-position: 0 -200px;
-}
-main .inner-container .sec4 .sec-con .top-con .skills ul li:nth-child(4) .skill-icon {
-  background-position: 0 -300px;
-}
-main .inner-container .sec4 .sec-con .top-con .skills ul li:nth-child(5) .skill-icon {
-  background-position: 0 -400px;
-}
-main .inner-container .sec4 .sec-con .top-con .skills ul li:nth-child(6) .skill-icon {
-  background-position: 0 -500px;
-}
-main .inner-container .sec4 .sec-con .top-con .skills ul li:nth-child(7) .skill-icon {
-  background-position: 0 -600px;
-}
-main .inner-container .sec4 .sec-con .top-con .skills ul li:nth-child(8) .skill-icon {
-  background-position: 0 -700px;
-}
-main .inner-container .sec4 .sec-con .top-con .skills ul li p {
-  font-family: "Roboto Condensed", sans-serif;
-  line-height: 16px;
-  padding: 10px;
-}
-main .inner-container .sec4 .sec-con .bottom-con {
-  width: 100%;
-  height: auto;
-  padding: 20px 0 60px;
-  display: flex;
-  gap: 60px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-@media only screen and (max-width: 768px) {
-  main .inner-container .sec4 .sec-con .bottom-con {
-    gap: 40px;
-  }
-}
-main .inner-container .sec4 .sec-con .bottom-con .certificate-con {
-  flex: 0 1 726px;
-}
-main .inner-container .sec4 .sec-con .bottom-con .certificate-con * {
-  border: none;
-}
-main .inner-container .sec4 .sec-con .bottom-con .certificate-con table {
-  width: 100%;
-  padding: 20px 0;
-}
-main .inner-container .sec4 .sec-con .bottom-con .certificate-con table tr td {
-  font-family: "Noto Sans KR", sans-serif;
-  vertical-align: top;
-  padding: 10px;
-}
-main .inner-container .sec4 .sec-con .bottom-con .contact {
-  flex: 0 1 726px;
-}
-main .inner-container .sec4 .sec-con .bottom-con .contact form {
-  padding: 20px 0;
-}
-main .inner-container .sec4 .sec-con .bottom-con .contact form * {
-  width: 100%;
-  display: block;
-  border-radius: 25px;
-  border: none;
-  outline: none;
-  margin-bottom: 20px;
-}
-main .inner-container .sec4 .sec-con .bottom-con .contact form input {
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: "Roboto Condensed", sans-serif;
-  background-color: #ffffff;
-  padding: 10px 20px;
-  line-height: 30px;
-  color: #000;
-}
-main .inner-container .sec4 .sec-con .bottom-con .contact form textarea {
-  font-size: 1rem;
-  font-family: "Roboto Condensed", sans-serif;
-  padding: 10px 20px;
-  resize: none;
-}
-main .inner-container .sec4 .sec-con .bottom-con .contact form span {
-  height: 44px;
-  line-height: 44px;
-  position: relative;
-}
-main .inner-container .sec4 .sec-con .bottom-con .contact form span button {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Roboto Condensed", sans-serif;
-  letter-spacing: 5px;
-  line-height: 24px;
-  padding: 10px 0;
-  cursor: pointer;
-}
-main .inner-container .sec4 .sec-con .bottom-con .contact form span::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  border-radius: 25px;
-  background-color: #F6DF66;
-  transition: all 0.3s;
-}
-main .inner-container .sec4 .sec-con .bottom-con .contact form span:hover::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-main .inner-container .sec4 .sec-con .bottom-con .contact form span:hover button {
-  background-color: transparent;
 }
 main .inner-container .popup-con {
   width: 100vw;
@@ -826,4 +824,76 @@ main .inner-container .popup-con iframe {
   height: 100vh !important;
   top: 0 !important;
   visibility: visible !important;
+}
+
+@keyframes clickAni {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #252525;
+  padding: 100px 0;
+}
+footer .fcon {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  color: #f9f9f9;
+}
+footer .fcon p.thanks {
+  font-size: 68px;
+  font-weight: 700;
+  margin: 0 0 60px 0;
+}
+footer .fcon address {
+  text-decoration: none;
+}
+footer .fcon address input {
+  font-size: 20px;
+  text-decoration: underline;
+  text-align: center;
+  border: transparent;
+  margin: 0 0 20px 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: #F6DF66;
+}
+footer .fcon address input:hover {
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #f9f9f9;
+}
+footer .fcon address input:focus {
+  outline: transparent;
+}
+footer .fcon address button {
+  display: block;
+  width: 80px;
+  height: 40px;
+  position: relative;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  border: none;
+  background-color: #F6DF66;
+  border-radius: 10px;
+  color: black;
+  animation: clickAni 0.8s ease-in-out infinite;
+}
+footer .fcon address button::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -5px;
+  left: calc(50% - 5px);
+  transform: rotate(45deg);
+  background-color: #F6DF66;
 }
