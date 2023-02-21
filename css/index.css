@@ -617,20 +617,13 @@ main .inner-container .project-con .sec-con .preview-con {
 }
 @media only screen and (max-width: 768px) {
   main .inner-container .project-con .sec-con .preview-con {
-    display: block;
-    height: auto;
     padding: 160px 0;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 main .inner-container .project-con .sec-con .preview-con .draft {
   flex: 0 1 882px;
-}
-@media only screen and (max-width: 768px) {
-  main .inner-container .project-con .sec-con .preview-con .draft {
-    width: 100%;
-    max-width: 432px;
-    margin: 0 auto;
-  }
 }
 main .inner-container .project-con .sec-con .preview-con .draft img {
   width: 100%;
@@ -639,13 +632,6 @@ main .inner-container .project-con .sec-con .preview-con .draft img {
 }
 main .inner-container .project-con .sec-con .preview-con .buttons {
   flex: 0 1 300px;
-}
-@media only screen and (max-width: 768px) {
-  main .inner-container .project-con .sec-con .preview-con .buttons {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-  }
 }
 main .inner-container .project-con .sec-con .preview-con .buttons span {
   display: block;
@@ -744,6 +730,42 @@ main .inner-container .sec3 .sec-con .design-con .typography .typo p.thum {
 main .inner-container .sec3 .sec-con .design-con .icons .icons-img {
   max-width: 435px;
 }
+main .inner-container .sec3 .sec-con .preview-con .draft {
+  position: relative;
+}
+main .inner-container .sec3 .sec-con .preview-con .draft:hover span.login {
+  visibility: visible;
+}
+main .inner-container .sec3 .sec-con .preview-con .draft:hover span.gallery {
+  visibility: visible;
+}
+main .inner-container .sec3 .sec-con .preview-con .draft span {
+  position: absolute;
+}
+main .inner-container .sec3 .sec-con .preview-con .draft span.landing {
+  font-family: "Roboto Condensed", sans-serif;
+  top: 3%;
+  left: 21%;
+}
+main .inner-container .sec3 .sec-con .preview-con .draft span.login {
+  visibility: hidden;
+  text-align: right;
+  top: 14%;
+  left: 5%;
+}
+main .inner-container .sec3 .sec-con .preview-con .draft span.gallery {
+  visibility: hidden;
+  top: 50%;
+  left: 10%;
+}
+main .inner-container .sec3 .sec-con .preview-con .draft span.sub1 {
+  top: 15%;
+  right: 17%;
+}
+main .inner-container .sec3 .sec-con .preview-con .draft span.sub5 {
+  bottom: 16%;
+  right: 17%;
+}
 main .inner-container .sec4 .sec-con .design-con .brand-intro .BI-con .emblem {
   width: 100%;
   max-width: 160px;
@@ -788,6 +810,27 @@ main .inner-container .sec4 .sec-con .design-con .typography .noto p.thum {
 }
 main .inner-container .sec4 .sec-con .design-con .icons .icons-img {
   max-width: 474px;
+}
+main .inner-container .sec4 .sec-con .preview-con .draft {
+  position: relative;
+}
+main .inner-container .sec4 .sec-con .preview-con .draft span {
+  position: absolute;
+}
+main .inner-container .sec4 .sec-con .preview-con .draft span.landing {
+  position: absolute;
+  top: 6%;
+  left: 20%;
+}
+main .inner-container .sec4 .sec-con .preview-con .draft span.login {
+  position: absolute;
+  bottom: 8%;
+  left: 15%;
+}
+main .inner-container .sec4 .sec-con .preview-con .draft span.product {
+  position: absolute;
+  top: 42%;
+  right: 10%;
 }
 main .inner-container .popup-con {
   width: 100vw;

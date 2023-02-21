@@ -57,8 +57,15 @@ sec2NotionBtn.addEventListener('click', ()=>{
 const popup = document.querySelector('.popup-con');
 const popupOut = popup.querySelector('span');
 const popupIframe = popup.querySelector('iframe');
+const sec3draftImg = sec3.querySelector('.draft>img');
 const sec3buttons = sec3.querySelector('.buttons');
 const sec3buttonsBtn = sec3buttons.querySelector('p');
+sec3draftImg.addEventListener('mouseover', ()=>{
+  sec3draftImg.setAttribute('src', "img/victorm_mouseover_img.jpg");
+});
+sec3draftImg.addEventListener('mouseout', ()=>{
+  sec3draftImg.setAttribute('src', "img/vixtorm_pages.jpg");
+})
 sec3buttonsBtn.addEventListener('click', ()=>{
   popupIframe.setAttribute('src', 'https://lucyseri.github.io/vixtorm/');
   popup.classList.add('popupOn');
@@ -66,6 +73,7 @@ sec3buttonsBtn.addEventListener('click', ()=>{
   popupIframe.setAttribute('height', '860px');
   popupIframe.style.borderRadius = "0";
 })
+const sec4draftImg = sec4.querySelector('.draft>img');
 const sec4buttons = sec4.querySelector('.buttons');
 const sec4buttonsBtn = sec4buttons.querySelectorAll('p');
 sec4buttons.addEventListener('click', (e)=>{
